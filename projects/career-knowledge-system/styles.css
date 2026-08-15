@@ -1,0 +1,186 @@
+/*
+  Career Knowledge System page styles.
+  Shared route, rail, type, surfaces, and responsive foundations live in
+  ../../styles/case-study.css. This file keeps only CKS-specific structures.
+*/
+.prose p:not(.index) { color:var(--mute); font-size:1.05rem; }
+#problem blockquote { margin:46px 0 0; padding:19px 0 19px 27px; border-left:4px solid #dc836c; color:var(--blue); font:clamp(1.7rem,3vw,2.35rem)/1.22 var(--serif); }
+
+#approach .flow { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:19px; margin:62px 0 61px; padding:22px 0 0; list-style:none; }
+#approach .flow::before { position:absolute; top:0; right:0; left:0; height:2px; background:#c3dddd; content:""; }
+#approach .flow li { position:relative; }
+#approach .flow em,.fieldCards em { display:inline-grid; width:36px; height:36px; place-items:center; background:var(--lime); color:var(--deep); font:700 .72rem var(--sans); font-style:normal; }
+#approach .flow h3 { margin-top:28px; }
+#approach .flow p { margin:11px 0 0; color:#deefec; font-size:.87rem; line-height:1.56; }
+
+.fieldCards { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:14px; }
+.fieldCards article { min-height:245px; padding:26px 22px; background:#eff6f3; }
+.fieldCards article:nth-child(2),.fieldCards article:nth-child(4) { background:#fffdf8; }
+.fieldCards h3 { margin-top:22px; font-size:1.42rem; }
+.fieldCards p { margin:13px 0 0; color:var(--mute); font-size:.93rem; }
+.narrowish { max-width:760px; margin-right:auto; margin-left:auto; }
+
+.useCards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin-top:42px; }
+.useCards article { padding:36px; background:#f2f5f1; }
+.useCards article:nth-child(2) { background:#e7f0eb; }
+.useCards article:nth-child(3) { background:#f5ecdf; }
+.useCards article:nth-child(4) { background:#edf3f5; }
+.useCards h3 { margin-bottom:16px; }
+.useCards p:not(.card-index) { margin:0; color:var(--mute); }
+
+.interviewExample { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin-top:44px; }
+.interviewExample article { padding:38px; }
+.recordPanel { background:#fffdf8; }
+.answerPanel { background:#e9f2ef; }
+dl { margin:0; }
+dl div { padding:12px 0; border-top:1px solid #d3d8d3; }
+dl div:first-child { border-top:0; padding-top:0; }
+dt { color:var(--blue); font-size:.72rem; font-weight:bold; letter-spacing:.08em; text-transform:uppercase; }
+dd { margin:3px 0 0; color:var(--mute); line-height:1.45; }
+.answerPanel h3 { margin-bottom:20px; font-size:clamp(1.7rem,2.5vw,2.4rem); }
+.answerPanel p:not(.card-index) { margin:0; color:var(--mute); }
+.useBoundary,.toolCallout { max-width:900px; margin:22px auto 0; padding:20px 22px; border-left:3px solid var(--gold); background:#fff7de; color:#46555d; }
+.useBoundary p:last-child,.toolCallout p:last-child { color:#46555d; }
+
+/* Section 5 only: question-first record-to-answer sequence. */
+#example .exampleQuestionFirst { display:flex; flex-direction:column; gap:0; margin-top:44px; }
+#example { --example-highlight:#fff7de; }
+#example .exampleQuestion { padding:42px 46px; border:1px solid var(--line); background:#fffdf8; }
+#example .exampleQuestion h3 { max-width:900px; margin:0; color:var(--deep); font-size:clamp(2rem,3.4vw,3.55rem); line-height:1.06; }
+#example .exampleLogic { max-width:760px; margin:34px auto; padding-left:0; border-left:0; }
+#example .exampleLogic p:last-child { margin:0; color:var(--mute); font-size:1.02rem; line-height:1.55; }
+#example .exampleRecord { padding:31px 34px; background:#fffdf8; }
+#example .exampleRecordHeader { display:flex; align-items:end; justify-content:space-between; gap:24px; margin-bottom:22px; }
+#example .exampleRecordHeader h3 { margin:0; color:var(--deep); font-size:clamp(1.45rem,2.2vw,2.1rem); }
+#example .recordLegend { display:flex; align-items:center; gap:9px; margin:0; color:var(--blue); font:700 .68rem/1.3 var(--sans); letter-spacing:.06em; text-transform:uppercase; white-space:nowrap; }
+#example .recordLegend span { width:13px; height:13px; background:var(--example-highlight); border:1px solid #d8c46a; }
+#example .recordTableWrap { overflow-x:auto; }
+#example .recordTableWrap table { width:100%; border-collapse:collapse; color:var(--mute); font-size:.78rem; line-height:1.4; }
+#example .recordTableWrap th,#example .recordTableWrap td { padding:10px 9px; border-top:1px solid #aebbb5; text-align:left; vertical-align:top; }
+#example .recordTableWrap thead th { color:var(--blue); font:700 .66rem/1.2 var(--sans); letter-spacing:.08em; text-transform:uppercase; }
+#example .recordTableWrap tbody th { width:19%; color:var(--blue); font-size:.72rem; font-weight:bold; }
+#example .recordTableWrap tbody tr.selectedRow { background:var(--example-highlight); }
+#example .recordTableWrap tbody tr.selectedRow th { color:var(--deep); }
+#example .exampleAnswer { padding:42px 46px; background:var(--deep); color:#fff; }
+#example .exampleAnswer .card-index { color:#e1f4f0; }
+#example .exampleAnswer p:not(.card-index) { max-width:920px; margin:0; color:#e9f4f2; font-size:1.08rem; line-height:1.62; }
+
+.maturity { background:#dcebe5; }
+.maturityGrid,.evidenceGrid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+.maturityGrid article,.evidenceGrid article { padding:40px 43px; }
+.demonstrated,.proved { background:#f9f8f1; }
+.evaluating,.limits { background:#f5ead9; }
+.maturity ul,.evidenceGrid ul { margin:0; padding:0; list-style:none; }
+.maturity li,.evidenceGrid li { padding:12px 0; border-top:1px solid #d3d4cd; color:var(--mute); }
+.discoveryFlow { display:flex; align-items:center; justify-content:center; gap:10px; margin:36px auto 0; color:var(--blue); text-align:center; }
+.discoveryFlow span { max-width:180px; padding:9px 12px; border:1px solid #aac0b9; background:#edf5f1; font-size:.8rem; font-weight:bold; line-height:1.35; }
+.discoveryFlow b { color:var(--blue); font-size:1.2rem; }
+.evidenceGrid { margin-top:34px; }
+.evidenceGrid li:first-child { border-top:1px solid #cfd7d0; }
+
+@media(max-width:980px) {
+  #approach .flow { grid-template-columns:repeat(3,minmax(0,1fr)); row-gap:33px; }
+  #approach .flow::before { display:none; }
+  .fieldCards { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .discoveryFlow { flex-wrap:wrap; }
+}
+@media(max-width:720px) {
+  #approach .flow,.fieldCards,.useCards,.interviewExample,.maturityGrid,.evidenceGrid { grid-template-columns:1fr; }
+  #approach .flow { margin-top:38px; padding:0; }
+  #approach .flow li { padding-left:53px; }
+  #approach .flow em { position:absolute; top:0; left:0; }
+  #approach .flow h3 { margin-top:0; }
+  .fieldCards article { min-height:0; }
+  .interviewExample article,.maturityGrid article,.evidenceGrid article,.useCards article { padding:29px 25px; }
+  #example .exampleQuestion,#example .exampleRecord,#example .exampleAnswer { padding:29px 25px; }
+  #example .exampleRecordHeader { display:block; }
+  #example .recordLegend { margin-top:17px; }
+  .discoveryFlow { flex-direction:column; }
+  .discoveryFlow b { transform:rotate(90deg); }
+}
+
+/* Owner visual-review adjustments: CKS only. */
+/* Eyebrows inherit alignment from their sectionHeader variant. */
+/* Split alignment is owned by the shared case-study rule. */
+main#main .split > p { border-top:1px solid var(--line); padding-top:18px; }
+/* Keep the interview prompt prominent without competing with the Section 5 title. */
+#example .exampleQuestionPrompt { max-width:900px; margin:0; padding:0 0 0 27px; border-left:4px solid var(--deep); color:var(--deep); font:clamp(1.4rem,2.05vw,2.05rem)/1.18 var(--serif); }
+#example .exampleAnswerQuote { max-width:920px; margin:0; padding:0 0 0 27px; border-left:4px solid #9ecac2; color:#e9f4f2; font:1.08rem/1.62 var(--sans); }
+/* Match the table's selected-row highlight so answer phrases map visibly to record fields. */
+/* Explain the interaction without competing with the answer label. */
+#example .exampleAnswer .interactionHint {
+  color:#e1f4f0;
+  font:400 .8rem/1.35 var(--sans);
+  letter-spacing:.03em;
+  text-transform:none;
+}
+#example .interactionHint--mobile { display:none; }
+@media (hover:none), (pointer:coarse) {
+  #example .interactionHint--desktop { display:none; }
+  #example .interactionHint--mobile { display:inline; }
+}
+/* Each answer clause exposes the matching field and definition from the record table. */
+#example .exampleAnswerQuote .recordTerm {
+  display:inline !important;
+  appearance:none;
+  -webkit-appearance:none;
+  position:relative;
+  padding:0;
+  border:0;
+  background:transparent;
+  color:inherit;
+  font:inherit;
+  line-height:inherit;
+  text-align:inherit;
+  cursor:pointer;
+}
+#example .exampleAnswerQuote .recordTermText {
+  background:var(--example-highlight);
+  padding:.14em .24em;
+  color:var(--deep);
+  text-decoration:none;
+  -webkit-box-decoration-break:clone;
+  box-decoration-break:clone;
+}
+@media(max-width:720px) {
+  #example .exampleAnswerQuote .recordTermText { padding:.10em .04em; }
+}
+#example .exampleAnswerQuote .recordTerm:focus-visible {
+  outline:2px solid var(--lime);
+  outline-offset:3px;
+}
+#example .exampleAnswerQuote .recordTerm .fieldPopup {
+  position:absolute;
+  z-index:5;
+  left:50%;
+  bottom:calc(100% + 14px);
+  width:min(270px,calc(100vw - 32px));
+  padding:14px 16px;
+  border:1px solid #9ecac2;
+  background:#fffdf8;
+  color:var(--deep);
+  box-shadow:0 8px 24px rgba(5,35,48,.18);
+  font:.78rem/1.42 var(--sans);
+  text-align:left;
+  text-decoration:none;
+  white-space:normal;
+  display:block;
+  pointer-events:none;
+  transform:translateX(-50%);
+}
+#example .exampleAnswerQuote .recordTerm .fieldPopup[hidden] {
+  display:none;
+}
+#example .exampleAnswerQuote .recordTerm .fieldPopup strong {
+  display:block;
+  margin-bottom:5px;
+  color:var(--deep);
+  font-size:.72rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+#example .exampleAnswerQuote .recordTerm .fieldPopup span {
+  display:block;
+  color:var(--mute);
+  text-decoration:none;
+}

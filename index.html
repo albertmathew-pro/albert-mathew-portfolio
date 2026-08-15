@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Project Manager portfolio for Albert Mathew, featuring AI-enabled workflows and knowledge systems.">
+  <title>Albert Mathew | Project Manager</title>
+  <!-- The live landing page reuses shared portfolio tokens; its page-specific layout lives in landing.css. -->
+  <link rel="stylesheet" href="styles/site.css?v=monogram3">
+  <link rel="stylesheet" href="styles/case-study.css?v=contact-icons">
+  <link rel="stylesheet" href="styles/landing.css?v=contact-icons2">
+  <script src="scripts/case-study-nav.js" defer></script>
+</head>
+<body class="landingPage">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- The landing header emphasizes identity and next actions instead of project-by-project navigation. -->
+  <header class="projectRoute" data-design-target="route">
+    <div class="routeWrap">
+      <a class="portfolioHome" href="index.html" aria-label="Portfolio home"><b>AM</b><span>Albert Mathew</span></a>
+      <nav class="projectNav" aria-label="Portfolio projects">
+        <a class="projectLink" href="projects/career-knowledge-system/index.html"><span>01</span><strong><span class="projectLinkTitle--desktop">Career Knowledge System</span><span class="projectLinkTitle--mobile">Knowledge<br>System</span></strong></a>
+        <a class="projectLink" href="projects/career-knowledge-extraction/index.html"><span>02</span><strong><span class="projectLinkTitle--desktop">Knowledge Extraction</span><span class="projectLinkTitle--mobile">Knowledge<br>Extraction</span></strong></a>
+        <a class="projectLink" href="projects/controls/index.html"><span>03</span><strong><span class="projectLinkTitle--desktop">Project Controls</span><span class="projectLinkTitle--mobile">Project<br>Controls</span></strong></a>
+      </nav>
+      <button class="pageJump" type="button" aria-expanded="false" aria-controls="home-menu" aria-label="Open page navigation">
+        <span class="pageJumpIcon" aria-hidden="true">☰</span>
+        <span class="pageJumpLabel">Menu</span>
+      </button>
+      <nav class="routeContacts contactIcons" aria-label="Contact links">
+        <a class="contactIcon" href="https://www.linkedin.com/in/albert-mathew-1331bb76/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img class="contactIconImage contactIconImage--linkedin" src="assets/in-logo/InBug-Black.png" alt=""></a>
+        <a class="contactIcon" href="mailto:contact@albertmathew.net" aria-label="Email contact@albertmathew.net"><img class="contactIconImage contactIconImage--email" src="assets/boxicons-rqFpVNvLlrw-unsplash.svg" alt=""></a>
+      </nav>
+    </div>
+  </header>
+
+  <button class="pageIndexScrim" type="button" tabindex="-1" aria-label="Close page navigation"></button>
+  <aside id="home-menu" class="pageIndex pageIndex--home" data-design-target="rail" aria-label="Page navigation">
+    <div class="pageIndexHeader">
+      <div>
+        <span class="pageIndexTitle">Albert Mathew</span>
+        <a class="pageIndexHome" href="index.html" aria-current="page">Home</a>
+      </div>
+      <button class="pageIndexClose" type="button" aria-label="Close page navigation"><span aria-hidden="true">×</span></button>
+    </div>
+    <nav class="pageIndexHomeLinks" aria-label="Case studies">
+      <a href="projects/career-knowledge-system/index.html">Career Knowledge System</a>
+      <a href="projects/career-knowledge-extraction/index.html">Knowledge Extraction</a>
+      <a href="projects/controls/index.html">Project Controls</a>
+    </nav>
+    <div class="pageIndexFooter">
+      <span class="pageIndexContactLabel">Contact</span>
+      <nav class="pageIndexContacts contactIcons" aria-label="Contact links">
+        <a class="contactIcon" href="https://www.linkedin.com/in/albert-mathew-1331bb76/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img class="contactIconImage contactIconImage--linkedin" src="assets/in-logo/InBug-Black.png" alt=""></a>
+        <a class="contactIcon" href="mailto:contact@albertmathew.net" aria-label="Email contact@albertmathew.net"><img class="contactIconImage contactIconImage--email" src="assets/boxicons-rqFpVNvLlrw-unsplash.svg" alt=""></a>
+      </nav>
+    </div>
+  </aside>
+
+  <main id="main">
+    <!-- Hero: puts the desired role and personal identity ahead of project detail. -->
+    <section class="landingHero" data-design-target="hero">
+      <div class="landingWrap landingHeroInner">
+        <h1>Albert Mathew</h1>
+        <p class="landingEyebrow">Project Manager</p>
+        <p class="landingPositioning">I bring structure to complex work through practical systems and AI-enabled workflows.</p>
+        <p class="landingPortfolioDescription">This portfolio shows how I apply AI to make complex work more traceable, reviewable, and useful—from structured knowledge systems to practical project controls.</p>
+        <p class="landingActions">
+          <a class="landingPrimary" href="projects/career-knowledge-system/index.html">View featured project</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured: establishes the Career Knowledge System as the primary proof of work. -->
+    <section class="landingFeatured" id="featured" data-design-target="flow" aria-labelledby="featured-title">
+      <div class="landingWrap">
+        <article class="landingFeaturedCard">
+          <p class="landingEyebrow">Featured case study</p>
+          <h2 id="featured-title">Career Knowledge System</h2>
+          <p class="landingFeaturedIntro">A staged approach to turning scattered career material into traceable records, useful guidance, and purpose-specific outputs.</p>
+
+          <a class="landingFeaturedLink" href="projects/career-knowledge-system/index.html">View case study <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Supporting work stays compact so it supports the featured rather than competing with it. -->
+    <section class="landingSupporting" id="selected-work" data-design-target="discovery" aria-labelledby="supporting-title">
+      <div class="landingWrap">
+        <p class="landingEyebrow">Additional case studies</p>
+        <h2 id="supporting-title">Selected work</h2>
+        <div class="landingProjectGrid">
+          <a class="landingProjectCard" href="projects/career-knowledge-extraction/index.html">
+            <span class="landingProjectNumber">02</span>
+            <span>
+              <strong>Knowledge Extraction</strong>
+              <small>A human-governed AI workflow for turning long-form career conversations into structured, traceable knowledge.</small>
+            </span>
+            <b aria-hidden="true">→</b>
+          </a>
+          <a class="landingProjectCard" href="projects/controls/index.html">
+            <span class="landingProjectNumber">03</span>
+            <span>
+              <strong>Project Controls</strong>
+              <small>Practical controls for making AI-assisted knowledge work more traceable, reviewable, and reliable to reuse.</small>
+            </span>
+            <b aria-hidden="true">→</b>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Direct contact links keep the simple homepage prototype from needing a separate contact page. -->
+  <footer class="landingFooter" id="contact">
+    <div class="landingWrap landingFooterInner">
+      <div class="landingFooterCopy">
+        <p class="landingFooterRole">Project Manager</p>
+        <hr class="landingFooterRule" aria-hidden="true">
+        <p class="landingFooterDescriptor">AI-enabled delivery and knowledge systems</p>
+      </div>
+      <nav class="contactIcons contactIcons--light" aria-label="Contact links">
+        <a class="contactIcon" href="https://www.linkedin.com/in/albert-mathew-1331bb76/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img class="contactIconImage contactIconImage--linkedin" src="assets/in-logo/InBug-White.png" alt=""></a>
+        <a class="contactIcon" href="mailto:contact@albertmathew.net" aria-label="Email contact@albertmathew.net"><img class="contactIconImage contactIconImage--email" src="assets/boxicons-rqFpVNvLlrw-unsplash.svg" alt=""></a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

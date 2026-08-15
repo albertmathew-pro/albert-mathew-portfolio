@@ -1,0 +1,8 @@
+# Operating-system files that should not be published.
+.DS_Store
+Thumbs.db
+
+# Other private files
+design-review/
+assets/hartono-creative-studio-dYYS21qIPvo-unsplash.svg
+assets/in-logo/LI-In-Blue.png

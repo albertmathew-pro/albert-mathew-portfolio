@@ -1,0 +1,256 @@
+.sub {
+  max-width:690px;
+  margin:0 0 30px;
+  color:var(--mute)
+}
+.narrow>p:not(.index) {
+  color:var(--mute);
+  font-size:1.07rem
+}
+#problem blockquote {
+  margin:45px 0 0;
+  padding:20px 0 20px 25px;
+  border-left:4px solid #da8068;
+  color:var(--deep);
+  font:clamp(1.45rem,3vw,2rem)/1.28 var(--serif)
+}
+#problem blockquote strong {
+  white-space:nowrap
+}
+#approach .cards {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  border-top:1px solid #b8c9c1;
+  border-left:1px solid #b8c9c1
+}
+/* Approach cards reserve equal title space so wrapped headings do not crowd the body copy. */
+#approach .cards article {
+  display:grid;
+  grid-template-rows:2.5em auto;
+  align-content:start;
+  min-height:230px;
+  padding:27px;
+  border-right:1px solid #b8c9c1;
+  border-bottom:1px solid #b8c9c1
+}
+#approach .cards h3 {
+  margin:0;
+}
+#approach .cards p,.outputCards p {
+  margin:0;
+  color:var(--mute);
+  font-size:.92rem
+}
+.center h2 { margin-inline:auto; }
+.center>p:not(.index) {
+  color:var(--mute)
+}
+#workflow .flow {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  padding:0;
+  margin:58px 0 24px;
+  list-style:none
+}
+#workflow .flow li {
+  position:relative;
+  min-height:255px;
+  padding:22px 20px 12px;
+  border-top:2px solid #b7ded5
+}
+#workflow .flow b {
+  display:grid;
+  place-items:center;
+  width:34px;
+  height:34px;
+  margin-bottom:35px;
+  background:var(--lime);
+  color:var(--deep);
+  font-size:.75rem
+}
+#workflow .flow p {
+  margin:0;
+  color:#c4d0d2;
+  font-size:.85rem
+}
+.workflowNote {
+  max-width:820px;
+  margin:30px auto 0;
+  color:#c4d0d2;
+  font-size:.9rem;
+  text-align:center
+}
+/* Paired comparison cards: equal heading space keeps divider rows aligned. */
+#model .roles article {
+  padding:clamp(28px,4vw,48px);
+  background:var(--white)
+}
+#model .roles article+article {
+  background:#eff6f3
+}
+#model .roles h3 {
+  min-height:2.1em;
+  margin-bottom:25px;
+  font:400 1.8rem/1.05 var(--serif)
+}
+#model .roles ul,#evidence .evidence ul {
+  padding:0;
+  margin:0;
+  list-style:none
+}
+#model .roles li,#evidence .evidence li {
+  padding:9px 0;
+  border-top:1px solid var(--line);
+  color:var(--mute);
+  font-size:.9rem
+}
+.note {
+  max-width:820px;
+  margin:30px auto 0;
+  color:var(--mute);
+  text-align:center;
+  font-size:.9rem
+}
+.outputCards {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px
+}
+/* A compact, clearly synthetic before-and-after example for the Extraction case study. */
+.extractionExample {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 42px minmax(0,1fr);
+  gap:20px;
+  align-items:center;
+  max-width:980px;
+  margin:38px auto 0;
+}
+.examplePanel {
+  min-height:100%;
+  padding:28px 30px;
+  border:1px solid var(--line);
+  background:var(--white);
+}
+.examplePanel .eyebrow { margin-bottom:16px; }
+.examplePanel blockquote {
+  margin:0;
+  padding-left:18px;
+  border-left:3px solid var(--lime);
+  color:var(--ink);
+  font:1.22rem/1.4 Arial, sans-serif;
+}
+.examplePanel blockquote + blockquote { margin-top:18px; }
+.examplePanel blockquote p { margin:0 0 14px; }
+.examplePanel blockquote p:last-child { margin-bottom:0; }
+.exampleArrow {
+  margin:0;
+  color:var(--blue);
+  font:2rem/1 var(--serif);
+  text-align:center;
+}
+.exampleRecord dl { margin:0; }
+.exampleRecord dl > div { padding:11px 0; border-top:1px solid var(--line); }
+.exampleRecord dl > div:first-child { padding-top:0; border-top:0; }
+.exampleRecord dt { color:var(--blue); font-size:.76rem; font-weight:bold; letter-spacing:.08em; text-transform:uppercase; }
+.exampleRecord dd { margin:5px 0 0; color:var(--mute); font-size:.92rem; line-height:1.42; }
+@media(max-width:840px) {
+  .extractionExample { grid-template-columns:1fr; gap:14px; }
+  .exampleArrow { transform:rotate(90deg); }
+}
+.outputCards article {
+  min-height:205px;
+  padding:27px;
+  background:var(--paper)
+}
+#evidence .evidence article {
+  min-height:340px;
+  background:#e6f1ea
+}
+#evidence .evidence article+article {
+  background:#f2e7d5
+}
+.limit {
+  display:grid;
+  grid-template-columns:38px 1fr;
+  gap:16px;
+  max-width:920px;
+  margin:20px auto 0;
+  padding:22px 25px;
+  background:#fff7df;
+  border:1px solid #dbb85f
+}
+.limit b {
+  display:grid;
+  place-items:center;
+  width:31px;
+  height:31px;
+  border-radius:50%;
+  background:var(--gold);
+  color:var(--deep)
+}
+.limit p {
+  grid-column:2;
+  margin:0;
+  color:#52616a;
+  font-size:.89rem
+}
+/* Closing skills section and footer. */
+.capability .index {
+  color:#b7ded5
+}
+.capability h2 {
+  color:#fff
+}
+.tags {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:8px;
+  margin:0 0 34px
+}
+.foot strong { color:#fff; }
+.foot>p {
+  text-align:right
+}
+/* Responsive rules: collapse multi-column layout before it becomes cramped. */
+@media(max-width:840px) {
+  #model .roles,#evidence .evidence { grid-template-columns:1fr; }
+  #approach .cards,.outputCards {
+    grid-template-columns:repeat(2,1fr)
+  }
+  #workflow .flow {
+    grid-template-columns:1fr
+  }
+  #workflow .flow li {
+    min-height:0;
+    border-top:1px solid #b7ded5
+  }
+  .foot {
+    display:block
+  }
+  .foot>p {
+    text-align:left;
+    margin-top:18px
+  }
+}
+@media(max-width:560px) {
+  #problem blockquote strong {
+    white-space:normal
+  }
+  #approach .cards,.outputCards {
+    grid-template-columns:1fr
+  }
+  .quiet {
+    display:inline-block;
+    margin:16px 0 0
+  }
+}
+
+/* Section 2 keeps its three principles on one row at desktop widths. */
+#approach .cards { grid-template-columns:repeat(3,minmax(0,1fr)); }
+@media(max-width:840px) {
+  #approach .cards { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:560px) {
+  #approach .cards { grid-template-columns:1fr; }
+}
