@@ -6,9 +6,9 @@
   <meta name="description" content="Project Manager portfolio for Albert Mathew, featuring AI-enabled workflows and knowledge systems.">
   <title>Albert Mathew | Project Manager</title>
   <!-- The live landing page reuses shared portfolio tokens; its page-specific layout lives in landing.css. -->
-  <link rel="stylesheet" href="styles/site.css?v=monogram3">
-  <link rel="stylesheet" href="styles/case-study.css?v=contact-icons">
-  <link rel="stylesheet" href="styles/landing.css?v=contact-icons2">
+  <link rel="stylesheet" href="styles/site.css?v=browser-scale3">
+  <link rel="stylesheet" href="styles/case-study.css?v=browser-scale8">
+  <link rel="stylesheet" href="styles/landing.css?v=browser-scale3">
   <script src="scripts/case-study-nav.js" defer></script>
 </head>
 <body class="landingPage">
@@ -18,11 +18,7 @@
   <header class="projectRoute" data-design-target="route">
     <div class="routeWrap">
       <a class="portfolioHome" href="index.html" aria-label="Portfolio home"><b>AM</b><span>Albert Mathew</span></a>
-      <nav class="projectNav" aria-label="Portfolio projects">
-        <a class="projectLink" href="projects/career-knowledge-system/index.html"><span>01</span><strong><span class="projectLinkTitle--desktop">Career Knowledge System</span><span class="projectLinkTitle--mobile">Knowledge<br>System</span></strong></a>
-        <a class="projectLink" href="projects/career-knowledge-extraction/index.html"><span>02</span><strong><span class="projectLinkTitle--desktop">Knowledge Extraction</span><span class="projectLinkTitle--mobile">Knowledge<br>Extraction</span></strong></a>
-        <a class="projectLink" href="projects/controls/index.html"><span>03</span><strong><span class="projectLinkTitle--desktop">Project Controls</span><span class="projectLinkTitle--mobile">Project<br>Controls</span></strong></a>
-      </nav>
+      <!-- LANDING-PAGE EXCEPTION: The visible project switcher is intentionally omitted here; see the current Markup Implementation Protocol. -->
       <button class="pageJump" type="button" aria-expanded="false" aria-controls="home-menu" aria-label="Open page navigation">
         <span class="pageJumpIcon" aria-hidden="true">☰</span>
         <span class="pageJumpLabel">Menu</span>
@@ -63,8 +59,8 @@
       <div class="landingWrap landingHeroInner">
         <h1>Albert Mathew</h1>
         <p class="landingEyebrow">Project Manager</p>
-        <p class="landingPositioning">I bring structure to complex work through practical systems and AI-enabled workflows.</p>
-        <p class="landingPortfolioDescription">This portfolio shows how I apply AI to make complex work more traceable, reviewable, and useful—from structured knowledge systems to practical project controls.</p>
+        <p class="landingPositioning">I bring structure to complex work when the way forward is unclear.</p>
+        <p class="landingPortfolioDescription">This portfolio shows how I use AI to organize the information and decisions behind complex work, so the next step has a sound basis.</p>
         <p class="landingActions">
           <a class="landingPrimary" href="projects/career-knowledge-system/index.html">View featured project</a>
         </p>
@@ -76,10 +72,16 @@
       <div class="landingWrap">
         <article class="landingFeaturedCard">
           <p class="landingEyebrow">Featured case study</p>
-          <h2 id="featured-title">Career Knowledge System</h2>
-          <p class="landingFeaturedIntro">A staged approach to turning scattered career material into traceable records, useful guidance, and purpose-specific outputs.</p>
+          <h2 id="featured-title">Career Knowledge<br>System</h2>
+          <p class="landingFeaturedIntro">See how I structure work for interviews, portfolio work, and career decisions.</p>
 
           <a class="landingFeaturedLink" href="projects/career-knowledge-system/index.html">View case study <span aria-hidden="true">→</span></a>
+          <div class="landingFeaturedVisual" role="img" aria-label="Career Knowledge System connected to resume, interview, and portfolio outputs">
+            <img src="assets/cks_balanced.svg" alt="">
+            <span class="landingFeaturedLabel landingFeaturedLabel--resume" aria-hidden="true">Resume</span>
+            <span class="landingFeaturedLabel landingFeaturedLabel--interview" aria-hidden="true">Interview</span>
+            <span class="landingFeaturedLabel landingFeaturedLabel--portfolio" aria-hidden="true">Portfolio</span>
+          </div>
         </article>
       </div>
     </section>
@@ -94,7 +96,7 @@
             <span class="landingProjectNumber">02</span>
             <span>
               <strong>Knowledge Extraction</strong>
-              <small>A human-governed AI workflow for turning long-form career conversations into structured, traceable knowledge.</small>
+              <small>I recovered decisions and reasoning from a conversation without losing their context.</small>
             </span>
             <b aria-hidden="true">→</b>
           </a>
@@ -102,7 +104,7 @@
             <span class="landingProjectNumber">03</span>
             <span>
               <strong>Project Controls</strong>
-              <small>Practical controls for making AI-assisted knowledge work more traceable, reviewable, and reliable to reuse.</small>
+              <small>I decide when AI-assisted work is ready for use.</small>
             </span>
             <b aria-hidden="true">→</b>
           </a>
@@ -115,7 +117,7 @@
   <footer class="landingFooter" id="contact">
     <div class="landingWrap landingFooterInner">
       <div class="landingFooterCopy">
-        <p class="landingFooterRole">Project Manager</p>
+        <p class="landingFooterRole">Albert Mathew, Project Manager</p>
         <hr class="landingFooterRule" aria-hidden="true">
         <p class="landingFooterDescriptor">AI-enabled delivery and knowledge systems</p>
       </div>

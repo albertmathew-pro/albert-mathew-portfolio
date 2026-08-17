@@ -20,14 +20,17 @@
   --gold:#edc86d;
   --line:#d8d4c9;
   /* Shared brand-mark dimensions keep the landing and project headers in the same visual family. */
-  --brand-mark-size:62px;
+  --brand-mark-size:78px;
   --brand-mark-size-mobile:55px;
   /* Shared initials scale keeps the square monogram consistent across every header. */
   --brand-mark-initials-size:1.3rem;
   --brand-mark-initials-size-mobile:1.3rem;
   /* Shared route-frame dimensions keep page transitions visually continuous. */
-  --route-gutter:32px;
-  --route-header-height:92px;
+  /* Keep the rail and identity visibly inset as browser zoom reduces the CSS viewport. */
+  --route-gutter:80px;
+  /* Desktop 100% baseline: let the shared frame use the wider working canvas. */
+  --route-content-max:1800px;
+  --route-header-height:108px;
   --serif:Georgia,serif;
   --sans:Arial,sans-serif
 }
@@ -36,6 +39,8 @@
   box-sizing:border-box
 }
 html {
+  /* Fluid root sizing keeps 100% browser zoom readable without a page-scale workaround. */
+  font-size:clamp(16px,calc(14.4px + .2vw),17px);
   scroll-behavior:smooth
 }
 @media (prefers-reduced-motion: reduce) {
@@ -45,7 +50,7 @@ body {
   margin:0;
   background:var(--paper);
   color:var(--ink);
-  font:16px/1.6 var(--sans)
+  font:1rem/1.6 var(--sans)
 }
 a {
   color:inherit
@@ -92,6 +97,7 @@ header {
   place-items:center;
   width:var(--brand-mark-size);
   height:var(--brand-mark-size);
+  flex:0 0 var(--brand-mark-size);
   margin:0;
   background:var(--blue);
   color:var(--white);
