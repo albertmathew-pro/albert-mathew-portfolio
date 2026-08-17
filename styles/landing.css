@@ -105,7 +105,7 @@
   .landingActions { align-items:flex-start; flex-direction:column; gap:22px; }
   .landingFeatured .landingWrap { width:100%; }
   .landingFeaturedCard { min-height:0; height:auto; padding:31px 28px 80px; }
-  .landingFeaturedCard::after { right:28px; bottom:80px; left:28px; }
+  .landingFeaturedCard::after { right:28px; bottom:30px; left:28px; }
   .landingFeaturedCard .landingEyebrow { margin-bottom:25px; font-size:.75rem; }
   .landingFeaturedCard h2 { max-width:none; font-size:3.94rem; line-height:.91; }
   .landingFeaturedIntro { max-width:none; margin-top:32px; font-size:1.25rem; line-height:1.45; }
